@@ -6,14 +6,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Product extends Model
+class Payment extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'category_id', 'price', 'description', 'stock', 'image'];
+    protected $fillable = ['order_id', 'method', 'status'];
 
-    public function category(): BelongsTo
+    public function order(): BelongsTo
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Order::class);
     }
 }
+

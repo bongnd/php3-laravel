@@ -3,13 +3,13 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Category;
+use App\Models\Order;
 
-class CategorySeeder extends Seeder
+class OrderSeeder extends Seeder
 {
     public function run()
     {
-        Category::factory(5)->create();
+        Order::factory(10)->create();
     }
 }
 

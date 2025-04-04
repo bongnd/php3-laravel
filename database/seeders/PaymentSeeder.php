@@ -3,13 +3,13 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Category;
+use App\Models\Payment;
 
-class CategorySeeder extends Seeder
+class PaymentSeeder extends Seeder
 {
     public function run()
     {
-        Category::factory(5)->create();
+        Payment::factory(10)->create();
     }
 }
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FormController extends Controller
+class FormController 
 {
    public function showForm(){
         return view('form');
